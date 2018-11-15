@@ -11,3 +11,7 @@ Could be rewritten to play into pump and dumps in the future. Even though I woul
   - Bittrex-python w/ API key (pip install python-bittrex, [Bittrex API](https://support.3commas.io/hc/en-us/articles/360000235254-Bittrex-creating-an-API-key))
   - [Binance API Key](https://support.binance.com/hc/en-us/articles/360002502072-How-to-create-API)
   - Pytesseract (follow the instructions from [here](https://pypi.org/project/pytesseract/))
+
+# Usage 
+
+Set up the funds and markup variables (it doesn't ask the user, you'll have to do it in the code) and run the code. It then automatically starts monitoring for tweets with images (or text) of cryptocurrencies on McAfee's Twitter and buy those with all the funds you specified previously, selling it for your specified markup afterwards.
