@@ -14,6 +14,9 @@ pytesseract.pytesseract.tesseract_cmd = 'C:\\Program Files (x86)\\Tesseract-OCR\
 # Total amount in BTC you want to use to purchase the coin
 funds = 0.17
 
+# Markup over the price you want, 1.12 indicates selling the coin for a 12% profit margin (excluding transaction costs)
+markup = 1.12
+
 # Twitter API keys
 consumer_key = 'CONSUMER_KEY'
 consumer_secret = 'CONSUMER_SECRET'
