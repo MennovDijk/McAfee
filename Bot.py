@@ -113,7 +113,7 @@ class StdOutListener(StreamListener):
             if result.group(1) in bittrex_markets_set:
                 market = "BTC-" + result.group(1)
 
-                rate = round((float(my_bittrex.get_ticker(market=market)['result']['Ask']) * 1.05), 8)
+                rate = round((float(my_bittrex.get_ticker(market=market)['result']['Ask']) * 1.00), 8)
 
                 quantity = round((funds / rate), 8)
 
@@ -130,14 +130,14 @@ class StdOutListener(StreamListener):
                     time.sleep(1)
 
                 while True:
-                    response = self.limit_sell_bittrex(market=market, quantity = quantity, rate = rate, markup = 1.12)
+                    response = self.limit_sell_bittrex(market=market, quantity = quantity, rate = rate, markup = markup)
                     if response['success'] == True:
                         print("Placed a sell order.")
                         break
                     time.sleep(1)
             elif result.group(1) in binance_markets_set:
                 market = result.group(1) + "BTC"
-                rate = round((float(my_binance.get_ticker(symbol = market)['askPrice']) * 1.05), 8)
+                rate = round((float(my_binance.get_ticker(symbol = market)['askPrice']) * 1.00), 8)
                 quantity = round((funds / rate), 0)
                 print(market, rate, quantity)
 
@@ -160,7 +160,7 @@ class StdOutListener(StreamListener):
 
                 while True:
                     try:
-                        self.limit_sell_binance(market=market, quantity=quantity, recv = recv, rate = rate, markup = 1.12)
+                        self.limit_sell_binance(market=market, quantity=quantity, recv = recv, rate = rate, markup = markup)
                     except Exception as e:
                         print(e)
                         # Make sure the API doesn't block us.
