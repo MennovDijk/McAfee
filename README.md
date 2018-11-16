@@ -1,4 +1,4 @@
-# McAfee
+# Introduction
 McAfee Pump and Dump bot.
 
 Was used around a year ago when John McAfee was pumping and dumping cryptocurrencies from his Twitter account. 
@@ -15,3 +15,6 @@ Could be rewritten to play into pump and dumps in the future. Even though I woul
 # Usage 
 
 Set up the funds and markup variables (it doesn't ask the user, you'll have to do it in the code) and run the code. It then automatically starts monitoring for tweets with images (or text) of cryptocurrencies on McAfee's Twitter and buy those with all the funds you specified previously, selling it for your specified markup afterwards.
+
+# TODO
+  - None as of now.
