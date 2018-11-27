@@ -1,5 +1,5 @@
 # Introduction
-McAfee Pump and Dump bot.
+McAfee Pump and Dump bot. Only works for cryptocurrencies listed on Binance or Bittrex.
 
 Was used around a year ago when John McAfee was pumping and dumping cryptocurrencies from his Twitter account. 
 
